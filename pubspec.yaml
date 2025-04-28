@@ -1,7 +1,10 @@
 name: reusable_button
-description: "A new Flutter package project."
+description: "A Flutter package providing a set of reusable buttons including elevated, text, route-based, and visibility-controlled buttons with built-in loading support and flexible customization options."
 version: 0.0.1
-homepage:
+homepage: https://github.com/GenieCoderSrc/reusable_button
+repository: https://github.com/GenieCoderSrc/reusable_button
+issue_tracker: https://github.com/GenieCoderSrc/reusable_button/issues
+
 
 environment:
   sdk: ^3.7.2
@@ -10,6 +13,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  app_style: ^0.0.1
+  loading_builder: ^0.0.2
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +28,8 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
+example:
+  path: example
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
