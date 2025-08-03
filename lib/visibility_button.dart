@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class VisibilityButton extends StatelessWidget {
-  const VisibilityButton(
-      {super.key,
-      required this.isVisible,
-      required this.onPressed,
-      this.icon,
-      required this.btnTitle});
+  const VisibilityButton({
+    super.key,
+    required this.isVisible,
+    required this.onPressed,
+    this.icon,
+    required this.btnTitle,
+  });
 
   final String btnTitle;
   final bool isVisible;

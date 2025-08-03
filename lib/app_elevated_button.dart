@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loading_builder/btn_loading.dart';
 
-
 class AppButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String title;
@@ -10,7 +9,6 @@ class AppButton extends StatelessWidget {
   final Color? bgColor;
   final Color? txtColor;
   final String? logoPath;
-
 
   const AppButton({
     super.key,
@@ -21,7 +19,6 @@ class AppButton extends StatelessWidget {
     this.bgColor,
     this.txtColor,
     this.logoPath,
-
   });
 
   @override
@@ -39,7 +36,7 @@ class AppButton extends StatelessWidget {
             else
               Image(image: AssetImage(logoPath!), height: 35.0),
             Text(title, style: TextStyle(color: txtColor)),
-            btnLoading(loading: loading)
+            btnLoading(loading: loading),
           ],
         ),
       ),

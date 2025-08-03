@@ -12,13 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Reusable Button Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const HomeScreen(),
-      routes: {
-        '/next': (context) => const NextScreen(),
-      },
+      routes: {'/next': (context) => const NextScreen()},
     );
   }
 }
@@ -29,9 +25,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Screen'),
-      ),
+      appBar: AppBar(title: const Text('Home Screen')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -39,8 +33,9 @@ class HomeScreen extends StatelessWidget {
             AppButton(
               title: 'Submit',
               onPressed: () {
-                ScaffoldMessenger.of(context)
-                    .showSnackBar(const SnackBar(content: Text('Button Pressed')));
+                ScaffoldMessenger.of(
+                  context,
+                ).showSnackBar(const SnackBar(content: Text('Button Pressed')));
               },
               loading: false,
               bgColor: Colors.blue,
@@ -79,9 +74,7 @@ class NextScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Next Screen')),
-      body: const Center(
-        child: Text('You have navigated to the next screen!'),
-      ),
+      body: const Center(child: Text('You have navigated to the next screen!')),
     );
   }
 }

@@ -8,14 +8,15 @@ class AppTxtRouteButton extends StatelessWidget {
   final bool pop;
   final Object? arguments;
 
-  const AppTxtRouteButton(
-      {super.key,
-      this.title = '',
-      this.btnText = '',
-      this.btnTextColor = Colors.blue,
-      this.route = 'Invalid Route',
-      this.pop = false,
-      this.arguments});
+  const AppTxtRouteButton({
+    super.key,
+    this.title = '',
+    this.btnText = '',
+    this.btnTextColor = Colors.blue,
+    this.route = 'Invalid Route',
+    this.pop = false,
+    this.arguments,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,16 +25,22 @@ class AppTxtRouteButton extends StatelessWidget {
       children: <Widget>[
         Text(title),
         TextButton(
-          onPressed: () => pop
-              ? Navigator.pushReplacementNamed(context, route,
-                  arguments: arguments)
-              : Navigator.pushNamed(context, route),
+          onPressed:
+              () =>
+                  pop
+                      ? Navigator.pushReplacementNamed(
+                        context,
+                        route,
+                        arguments: arguments,
+                      )
+                      : Navigator.pushNamed(context, route),
           child: Text(
             btnText,
             style: TextStyle(
-                fontWeight: FontWeight.w700,
-                color: btnTextColor,
-                fontSize: 16.0),
+              fontWeight: FontWeight.w700,
+              color: btnTextColor,
+              fontSize: 16.0,
+            ),
           ),
         ),
       ],
