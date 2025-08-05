@@ -13,10 +13,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
+    
+  loading_builder: ^0.0.3
+  
 
 
-  loading_builder:
-    path: ../loading_builder
 
 
 dev_dependencies:
