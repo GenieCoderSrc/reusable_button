@@ -25,15 +25,13 @@ class AppTxtRouteButton extends StatelessWidget {
       children: <Widget>[
         Text(title),
         TextButton(
-          onPressed:
-              () =>
-                  pop
-                      ? Navigator.pushReplacementNamed(
-                        context,
-                        route,
-                        arguments: arguments,
-                      )
-                      : Navigator.pushNamed(context, route),
+          onPressed: () => pop
+              ? Navigator.pushReplacementNamed(
+                  context,
+                  route,
+                  arguments: arguments,
+                )
+              : Navigator.pushNamed(context, route),
           child: Text(
             btnText,
             style: TextStyle(
