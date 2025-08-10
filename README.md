@@ -20,7 +20,7 @@ Add this package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  reusable_button: ^0.0.1
+  reusable_button: latest_version
 ```
 
 Then run:
