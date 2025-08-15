@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:loading_builder/btn_loading.dart';
 
+
+import 'package:flutter/material.dart';
+import 'package:loading_builder/btn_loading.dart';
+
 class AppButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String title;
@@ -23,23 +27,31 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ElevatedButton(
-        onPressed: disableTouchWhenLoading && loading ? null : onPressed,
-        style: ButtonStyle(backgroundColor: WidgetStateProperty.all(bgColor)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            if (logoPath == null)
-              Container()
-            else
-              Image(image: AssetImage(logoPath!), height: 35.0),
-            Text(title, style: TextStyle(color: txtColor)),
-            btnLoading(loading: loading),
-          ],
-        ),
+    return ElevatedButton(
+      onPressed: disableTouchWhenLoading && loading ? null : onPressed,
+      style: ElevatedButton.styleFrom(
+        backgroundColor: bgColor,
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
       ),
+      child: _buildContent(),
+    );
+  }
+
+  Widget _buildContent() {
+    if (loading) {
+      return btnLoading(loading: true);
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (logoPath != null) ...[
+          Image.asset(logoPath!, height: 35),
+          const SizedBox(width: 8),
+        ],
+        Text(title, style: TextStyle(color: txtColor)),
+      ],
     );
   }
 }
+

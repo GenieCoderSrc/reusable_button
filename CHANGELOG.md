@@ -2,12 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+### Aug 15, 2025
+### Updated
+- Updated `AppButton`.
+
 ## 0.0.2
 ### Jul 15, 2025
 ### Updated
 - `AppTxtBtn`: Added loading indicator, disabled button while loading, and improved styling and layout.
 
-0.0.1
+
 
 
 ## 0.0.1
