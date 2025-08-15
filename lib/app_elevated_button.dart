@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:loading_builder/btn_loading.dart';
 
 
-import 'package:flutter/material.dart';
-import 'package:loading_builder/btn_loading.dart';
-
 class AppButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String title;
