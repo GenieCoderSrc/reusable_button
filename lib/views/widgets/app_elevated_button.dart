@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loading_builder/btn_loading.dart';
-
+import 'package:reusable_button/views/widgets/components/button_loading.dart';
 
 class AppButton extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -36,7 +35,7 @@ class AppButton extends StatelessWidget {
 
   Widget _buildContent() {
     if (loading) {
-      return btnLoading(loading: true);
+      return ButtonLoading(loading: true);
     }
 
     return Row(
@@ -51,4 +50,3 @@ class AppButton extends StatelessWidget {
     );
   }
 }
-
