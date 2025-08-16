@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## 0.0.4
 
-### Aug 16, 2025
+### Aug 17, 2025
 
 ### Added
 
