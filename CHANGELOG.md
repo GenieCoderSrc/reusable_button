@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 - Added `LoadingButton` widget for button loading indicators.
 
+
 ## 0.0.3
 
 ### Aug 15, 2025
