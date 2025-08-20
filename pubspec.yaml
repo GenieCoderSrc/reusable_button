@@ -1,14 +1,14 @@
 name: reusable_button
 description: "A Flutter package providing a set of reusable buttons including elevated, text, route-based, and visibility-controlled buttons with built-in loading support and flexible customization options."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/GenieCoderSrc/reusable_button
 repository: https://github.com/GenieCoderSrc/reusable_button
 issue_tracker: https://github.com/GenieCoderSrc/reusable_button/issues
 
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=1.17.0"
+  sdk: ^3.9.0
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
@@ -18,7 +18,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

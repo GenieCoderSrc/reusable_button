@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.5
+
+### Aug 22, 2025
+
+### ✨ Updated
+
+- Updated Dart sdk to 3.9.0
+- Removed `flutter_lints` Dependency
+
 ## 0.0.4
 
 ### Aug 17, 2025
@@ -9,7 +18,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Added `LoadingButton` widget for button loading indicators.
-
 
 ## 0.0.3
 
