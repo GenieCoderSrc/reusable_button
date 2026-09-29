@@ -19,6 +19,8 @@ A lightweight and flexible Flutter package to build customizable, reusable butto
 Add this package to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   reusable_button: latest_version
 ```
